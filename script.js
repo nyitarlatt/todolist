@@ -176,6 +176,8 @@ const showTask = function () {
     showFinishTab();
   }
   setLength();
+  clearSave();
+  saveData();
 };
 
 //clear all task
@@ -184,7 +186,25 @@ const clearAll = function () {
   allArr = [];
 };
 
-//event listener
+//add to localstorage
+const saveData = function () {
+  localStorage.setItem("tasks", allArr);
+};
+
+//clear local storage
+const clearSave = function () {
+  localStorage.removeItem("tasks");
+};
+
+//get data from local storage
+const getData = function () {
+  const data = localStorage.getItem("tasks");
+  if (!data) return;
+  const newArr = data.split(",");
+  return newArr;
+};
+
+//event listeners/////////////////////////////////////////////////
 innerContainer.addEventListener("click", function (e) {
   const element = e.target.classList;
 
@@ -283,3 +303,10 @@ btnNight.addEventListener("click", function () {
     night = true;
   }
 });
+
+//reload saved tasks
+let gData = getData();
+if (gData) {
+  allArr = [...gData];
+  showTask();
+}
