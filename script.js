@@ -246,7 +246,7 @@ innerContainer.addEventListener("click", function (e) {
   if (element.contains("btn_remove")) {
     removeTaskString(e.target.parentElement.dataset.number);
     removeTaskElement(e.target.parentElement.dataset.number);
-    setLength();
+    showTask();
   }
 
   //checked task
