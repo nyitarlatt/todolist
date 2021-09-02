@@ -24,7 +24,9 @@
 .header button{
   margin-left: auto;
   border-style: none;
-  background-color: #25273c
+  background-color: #25273c;
+  text_size: 20px;
+  height: 10px
 }
 
 .header h1 {
