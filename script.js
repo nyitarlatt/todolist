@@ -304,9 +304,10 @@ btnNight.addEventListener("click", function () {
   }
 });
 
-//reload saved tasks
-let gData = getData();
-if (gData) {
-  allArr = [...gData];
+//autoruns on page reload
+let saved = getData();
+if (saved) {
+  allArr = [...saved];
   showTask();
 }
+highLight();
