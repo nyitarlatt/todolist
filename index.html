@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container_fluid">
+      <div class="container">
+        <!--header logo-->
+        <div class="header">
+          <h1>T O D O</h1>
+        </div>
+
+        <!--input field-->
+        <div class="add_task">
+          <button class="submit_task">ADD</button>
+          <input class="input_task" type="text" />
+        </div>
+
+        <!--task tabs-->
+        <div class="task_tabs">
+          <button class="btn_tab all">All</button>
+          <button class="btn_tab active">Active</button>
+          <button class="btn_tab finish">Finished</button>
+        </div>
+
+        <div class="hr"></div>
+
+        <!--tasks page-->
+        <ul class="tasks">
+          <!--
+          <div class="task">
+            <div class="btn_checked"></div>
+            <p class="task_text">to do list</p>
+            <button class="btn_remove">X</button>
+          </div>
+        --></ul>
+
+        <div class="clear">
+          <button class="btn_clear">Clear All</button>
+        </div>
+        <footer></footer>
+      </div>
+    </div>
+
+    <!--link js files-->
+    <script src="script.js"></script>
+  </body>
+</html>
