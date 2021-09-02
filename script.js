@@ -239,7 +239,7 @@ innerContainer.addEventListener("click", function (e) {
   //clear task
   if (element.contains("clear")) {
     clearAll();
-    setLength();
+    showTask();
   }
 
   //remove task
