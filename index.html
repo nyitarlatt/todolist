@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <div class="container_fluid">
+      <div class="container">
+        <!--header logo-->
+        <div class="header rps">
+          <h1>T O D O</h1>
+          <button class="night_mode">☀️</button>
+        </div>
+
+        <!--input field-->
+        <div class="add_task rps">
+          <button class="submit_task">ADD</button>
+          <input class="input_task" type="text" />
+        </div>
+
+        <!--task tabs-->
+        <div class="task_tabs rps">
+          <button class="btn_tab">
+            <span class="tab_text all">All</span>
+          </button>
+          <button class="btn_tab">
+            <span class="tab_text active"> Active</span>
+          </button>
+          <button class="btn_tab">
+            <span class="tab_text finish">Finished</span>
+          </button>
+          <button class="btn_tab">
+            <span class="tab_text clear">Clear All</span>
+          </button>
+        </div>
+
+        <div class="hr rps"></div>
+
+        <!--tasks page-->
+        <div class="tasks rps"></div>
+        <footer></footer>
+      </div>
+    </div>
+
+    <!--link js files-->
+    <script src="script.js"></script>
+  </body>
+</html>
