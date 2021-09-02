@@ -5,9 +5,6 @@
   .rps {
     width: 100%;
   }
-  .hrps {
-    width: 99%;
-  }
 }
 
 @media (min-width: 576px) {
@@ -16,9 +13,6 @@
   }
   .rps {
     width: 90%;
-  }
-  .hrps {
-    width: 89%;
   }
 }
 
@@ -29,9 +23,6 @@
   .rps {
     width: 80%;
   }
-  .hrps {
-    width: 79%;
-  }
 }
 
 @media (min-width: 992px) {
@@ -41,9 +32,6 @@
   .rps {
     width: 70%;
   }
-  .hrps {
-    width: 69%;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -52,8 +40,5 @@
   }
   .rps {
     width: 60%;
-  }
-  .hrps {
-    width: 59%;
   }
 }
