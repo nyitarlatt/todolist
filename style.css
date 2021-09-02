@@ -22,7 +22,9 @@
 }
 
 .header button{
-  float: left;
+  float: right;
+  border-style: none;
+  background-color: #25273c
 }
 
 .header h1 {
