@@ -240,15 +240,15 @@ innerContainer.addEventListener("click", function (e) {
   //clear task
   if (element.contains("clear")) {
     clearAll();
-    setLength();
+    showTask();
   }
 
   //remove task
   if (element.contains("btn_remove")) {
     removeTaskString(e.target.parentElement.dataset.number);
     removeTaskElement(e.target.parentElement.dataset.number);
-    setLength();
-  }
+    showTask();  
+}
 
   //checked task
   if (element.contains("btn_checked")) {
