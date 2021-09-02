@@ -1,4 +1,4 @@
-//css
+//css support
 const btnAdd = document.querySelector(".submit_task");
 
 const btnClick = function (mouse, type, cls) {
@@ -23,6 +23,7 @@ const tabs = document.querySelector(".task_tabs");
 const btnTabs = document.querySelectorAll(".tab_text");
 const innerContainer = document.querySelector(".container");
 const btnNight = document.querySelector(".night_mode");
+const root = document.documentElement.style;
 
 //gloval variables
 let allArr = [];
@@ -48,7 +49,7 @@ const setLength = function () {
   }
 
   const height = len >= 5 ? 27 : len * 6;
-  document.documentElement.style.setProperty("--tasks--", `${height}vh`);
+  root.setProperty("--tasks--", `${height}vh`);
 };
 
 //high light
@@ -239,14 +240,14 @@ innerContainer.addEventListener("click", function (e) {
   //clear task
   if (element.contains("clear")) {
     clearAll();
-    showTask();
+    setLength();
   }
 
   //remove task
   if (element.contains("btn_remove")) {
     removeTaskString(e.target.parentElement.dataset.number);
     removeTaskElement(e.target.parentElement.dataset.number);
-    showTask();
+    setLength();
   }
 
   //checked task
@@ -284,30 +285,30 @@ btnNight.addEventListener("click", function () {
   if (night) {
     btnNight.innerHTML = "🌙";
 
-    document.documentElement.style.setProperty("--night--", "#FFF");
-    document.documentElement.style.setProperty("--white--", "#000");
-    document.documentElement.style.setProperty("--black--", "#FFF");
-    document.documentElement.style.setProperty("--img--", "url('ice.jpg')");
-    document.documentElement.style.setProperty("--bkcolor--", "#E1E0E0");
+    root.setProperty("--night--", "#FFF");
+    root.setProperty("--white--", "#000");
+    root.setProperty("--black--", "#FFF");
+    root.setProperty("--img--", "url('ice.jpg')");
+    root.setProperty("--bkcolor--", "#E1E0E0");
 
     night = false;
     console.log("fsad");
   } else {
-    document.documentElement.style.setProperty("--night--", "#25273c");
-    document.documentElement.style.setProperty("--white--", "#FFF");
-    document.documentElement.style.setProperty("--black--", "#000");
-    document.documentElement.style.setProperty("--img--", "url('sky.jpg')");
-    document.documentElement.style.setProperty("--bkcolor--", "#161722");
+    root.setProperty("--night--", "#25273c");
+    root.setProperty("--white--", "#FFF");
+    root.setProperty("--black--", "#000");
+    root.setProperty("--img--", "url('sky.jpg')");
+    root.setProperty("--bkcolor--", "#161722");
 
     btnNight.innerHTML = "☀️";
     night = true;
   }
 });
 
-//autoruns on page reload
+//page reload auto run////////////////////////////////////
 let saved = getData();
 if (saved) {
-  allArr = [...saved];
+  allArr = [...gData];
   showTask();
 }
 highLight();
