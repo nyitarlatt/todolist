@@ -134,7 +134,7 @@
   width: 70%;
 }
 .btn_clear {
-  width: 20%;
+  width: auto;
   height: 40px;
   background-color: #25273c;
   border-style: none;
