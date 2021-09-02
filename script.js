@@ -308,7 +308,7 @@ btnNight.addEventListener("click", function () {
 //page reload auto run////////////////////////////////////
 let saved = getData();
 if (saved) {
-  allArr = [...gData];
+  allArr = [...saved];
   showTask();
 }
 highLight();
