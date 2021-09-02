@@ -26,7 +26,8 @@
   border-style: none;
   background-color: #25273c;
   text_size: 20px;
-  height: 10px
+  height: 30px;
+  border-radius: 5px;
 }
 
 .header h1 {
