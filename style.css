@@ -116,10 +116,17 @@
 }
 
 .task_text {
-  height: 30px;
+  width: 70%;
+  height: 40px;
   margin: 10px 0 10px 50px;
   color: #fff;
   font-size: 18px;
+  display: inline-block;
+  overflow-y: hidden;
+}
+
+.task_text::-webkit-scrollbar {
+  width: 0;
 }
 
 .btn_remove {
