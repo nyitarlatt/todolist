@@ -22,7 +22,7 @@
 }
 
 .header button{
-  float: right;
+  margin-left: auto;
   border-style: none;
   background-color: #25273c
 }
